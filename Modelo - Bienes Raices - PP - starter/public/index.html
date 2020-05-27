@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/table.js" defer></script>
+    <script src="./js/xhr.js" defer></script>
+    <script src="./js/anuncio.js" defer></script>
+    <script src="./js/anuncio_mascota.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Administracion</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="" alt="logo empresa"></a>
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <p id="img"></p>
+    <form action="#"  id="frmAlta" class="frm">
+        <fieldset style="width: 500px">
+            <legend>Informacion del Anuncio</legend>
+                <div hidden id="divId">
+                    <th>
+                        <td><label for="txtId">Id:</label></td>
+                        <td><input type="text" name="id" id="txtId" ></td>
+                    </th>
+                </div>
+                <div id="frmDiv">
+                    <tr id="frmTr">
+                        <td id="frmTd"><label for="txtTitulo">Titulo:</label></td>
+                        <td id="frmTd"><input type="text" id="txtTitulo" name="titulo" required></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">   
+                    </tr>
+                        <td id="frmTd"><label for="txtDescripcion">Descripcion:</label></td>
+                        <td id="frmTd"><textarea id="txtDescripcion" name="descripcion" required></textarea></td>
+                    <tr id="frmTr">
+                </div>
+                <div id="frmDiv">
+                    <tr id="frmTr">
+                        <td id="frmTd"><label for="animal">Animal:</label></td>
+                        <td id="frmTd"><input type="radio" id="perro" name="animal">Perro</td>
+                        <td id="frmTd"><input type="radio" id="gato" name="animal" >Gato</td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                        <td id="frmTd"><label for="txtPrecio">Precio:</label></td>
+                        <td id="frmTd"><input type="text" id="txtPrecio" name="precio" min="0" required></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                    <tr id="frmTr">
+                        <p><i class="fas fa-cat"></i></p>
+                        <td id="frmTd"><label for="txtRaza" ></label></td>
+                        <td id="frmTd"><input type="text" id="txtRaza" name="raza" value="Raza"></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                    <tr id="frmTr">
+                        <td id="frmTd"><label for="txtFecha"></label></td>
+                        <td id="frmTd"><input type="text" id="txtFecha" name="fecha" value="dd/mm/aaaa"></td>
+                    </tr>
+                </div>
+                <div id="frmDiv">
+                    <tr id="frmTr">
+                        <td id="frmTd">
+                            <select name="vacunas" id="txtVacunas">
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                </div>
+            </fieldset>
+                    <div id="divBotones">
+                        <input type="button" name="Alta" id="btnAlta" value="Guardar">
+                        <input type="button" name="Baja" id="btnBaja" value="Eliminar">
+                        <input type="button" name="Modificar" id="btnModificar" value="Modificar">
+                        <input type="button" name="Cancelar" id="btnCancelar" value="Cancelar">
+                    </div>
+    </form>
+    <div id="divTabla">
+
+    </div>
+    <footer>
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        <p>Todos los Derechos Reservados 2020 &COPY; </p>
+    </footer>
+</body>
+</html>
